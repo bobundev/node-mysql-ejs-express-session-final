@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+  <%- include('partials/navbar.ejs') %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Bonjour <%= user.firstname %></h1>
+        <h1>Tableau de bord</h1>
+        <a href="/auth/logout">Se déconnecter</a>
+      </div>
+    </div>
+  </div>
+
+
+<%- include('partials/footer.ejs') %>

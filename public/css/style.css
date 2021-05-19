@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+}
+
+p {
+  color: #575a7b;
+  font-size: 1.375rem !important;
+  font-weight: 400  !important;
+  margin-bottom: 2rem !important;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.8rem !important;
+  color: #198754;
+  font-family: 'DM Serif Display', serif;
+}

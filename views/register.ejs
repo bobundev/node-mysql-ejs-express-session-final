@@ -1,0 +1,58 @@
+<%- include('partials/header.ejs') %>
+  <%- include('partials/navbar.ejs') %>
+
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6">
+            <img src="/images/register.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-md-6">
+            <!-- Sign in -->
+            
+            <% if(message.length > 0) { %>
+              <div class="alert alert-warning" role="alert"><%=message%></div>
+            <% } %>
+
+              <form action="/auth/register" method="POST">
+                <div class="mb-4">
+                  <h2 class="h4">S'inscrire</h2>
+                </div>
+
+                <!-- Lastname -->
+                <div class="mb-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control form__input" name="lastname" placeholder="Votre nom">
+                  </div>
+                </div>
+
+                <!-- Firstname -->
+                <div class="mb-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control form__input" name="firstname" placeholder="Votre prénom">
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <div class="input-group">
+                    <input type="email" class="form-control form__input" name="email" placeholder="Votre email">
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                  <div class="input-group">
+                    <input type="password" class="form-control form__input" name="password" placeholder="Votre mot de passe">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-success">S'inscrire</button>
+              </form>
+       
+          </div>
+        </div>
+      </div>
+
+
+    <%- include('partials/footer.ejs') %>

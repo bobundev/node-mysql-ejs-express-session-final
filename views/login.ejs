@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+  <%- include('partials/navbar.ejs') %>
+
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6">
+            <img src="/images/login.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-md-6">
+            <!-- Sign in -->
+            <% if(message.length > 0) { %>
+              <div class="alert alert-success" role="alert"><%=message%></div>
+            <% } %>
+              <form action="login" method="POST">
+                <div class="mb-4">
+                  <h2 class="h4">Se connecter</h2>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <div class="input-group">
+                    <input type="email" class="form-control form__input" name="email" placeholder="Votre email">
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                  <div class="input-group">
+                    <input type="password" class="form-control form__input" name="password"
+                      placeholder="Votre mot de passe">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-success">Se connecter</button>
+              </form>
+       
+          </div>
+        </div>
+      </div>
+
+
+    <%- include('partials/footer.ejs') %>
